@@ -299,17 +299,17 @@ ul#nav li.current a { color: #57845C; }
    position: relative;
   	margin-bottom: 60px;
   	background: #ccc;
-  	height: 42px;
+  	height: 18px;
   	border-radius: 3px;
 }
 .bars li em {
-	font: 15px 'opensans-bold', sans-serif;
+	font: 13px  'opensans-bold', sans-serif;
    color: #313131;
 	text-transform: uppercase;
-   letter-spacing: 2px;
+
 	font-weight: normal;
    position: relative;
-	top: -36px;
+	top: -24px;
 }
 .bar-expand {
    position: absolute;
@@ -318,32 +318,32 @@ ul#nav li.current a { color: #57845C; }
 
    margin: 0;
    padding-right: 24px;
-  	background: #313131;
+  	background: #57845C;
    display: inline-block;
-  	height: 42px;
+  	height: 18px;
    line-height: 42px;
    border-radius: 3px 0 0 3px;
 }
 
-.photoshop {
-  	width: 60%;
-  	-moz-animation: photoshop 2s ease;
-  	-webkit-animation: photoshop 2s ease;
+.cent {
+  	width: 100%;
+  	-moz-animation: cent 2s ease;
+  	-webkit-animation: cent 2s ease;
 }
-.illustrator {
-  	width: 55%;
-  	-moz-animation: illustrator 2s ease;
-  	-webkit-animation: illustrator 2s ease;
+.qvingts {
+  	width: 80%;
+  	-moz-animation: qvingts 2s ease;
+  	-webkit-animation: qvingts 2s ease;
 }
-.wordpress {
+.sdix {
+  	width: 70%;
+  	-moz-animation: sdix 2s ease;
+  	-webkit-animation: sdix 2s ease;
+}
+.cinq {
   	width: 50%;
-  	-moz-animation: wordpress 2s ease;
-  	-webkit-animation: wordpress 2s ease;
-}
-.css {
-  	width: 90%;
-  	-moz-animation: css 2s ease;
-  	-webkit-animation: css 2s ease;
+  	-moz-animation: cinq 2s ease;
+  	-webkit-animation: cinq 2s ease;
 }
 .html5 {
   	width: 80%;
