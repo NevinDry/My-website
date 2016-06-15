@@ -305,9 +305,8 @@ ul#nav li.current a { color: #57845C; }
   	border-radius: 3px;
 }
 .bars li em {
-	font: 13px  'opensans-bold', sans-serif;
+	font: 10px  'opensans-bold', sans-serif;
    color: #313131;
-	text-transform: uppercase;
 
 	font-weight: normal;
    position: relative;
