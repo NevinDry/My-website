@@ -180,6 +180,65 @@
 });
 
 
+/*----------------------------------------------------*/
+/*	Translate
+------------------------------------------------------*/
+
+function TransMod(){
+	this.translate = function(lang, token) {
+		return library[lang][token];
+	}
+	
+	var library = new Array();
+	
+    // EN
+	library["en"] = new Array();
+	library["en"]["translatable.menuHome"] = "Home";
+	library["en"]["translatable.menuResume"] = "Resume";
+	library["en"]["translatable.menuWorks"] = "Works";
+	library["en"]["translatable.menuContact"] = "Contact";
+	library["en"]["translatable.menuAbout"] = "About";
+	library["en"]["translatable.objectif"] = "I am looking to be part of development team to share my experience, bring my skills, improve them and enrich my knowledge.";
+	library["en"]["translatable.aboutTtitle"] = "About";
+
+
+    // FR
+	library["fr"] = new Array();
+	library["fr"]["translatable.menuHome"] = "Acceuil";
+	library["fr"]["translatable.menuResume"] = "CV";
+	library["fr"]["translatable.menuWorks"] = "Projets";
+	library["fr"]["translatable.menuContact"] = "Contact";
+	library["fr"]["translatable.menuAbout"] = "A propos";
+	library["fr"]["translatable.objectif"] = "Je recherche une équipe de dévelopement pour partager mon expérience, apporter mes compétences, les améliorer et enrichir mes conaissances";
+	library["fr"]["translatable.aboutTtitle"] = "Mon histoire";
+
+	
+}
+
+( function(){
+	
+	function InitStaticText(lang){
+		var langModule = new TransMod();
+		$("#menuHome").html(langModule.translate(lang, $("#menuHome").attr("data-token")));
+        $("#menuResume").html(langModule.translate(lang, $("#menuResume").attr("data-token")));
+		$("#menuContact").html(langModule.translate(lang, $("#menuContact").attr("data-token")));
+		$("#menuWorks").html(langModule.translate(lang, $("#menuWorks").attr("data-token")));
+		$("#menuAbout").html(langModule.translate(lang, $("#menuAbout").attr("data-token")));
+		$("#objectif").html(langModule.translate(lang, $("#objectif").attr("data-token")));
+		$("#aboutTtitle").html(langModule.translate(lang, $("#aboutTtitle").attr("data-token")));
+
+	}	
+	
+	InitStaticText("en");
+
+	$("#frButton").click(function(){ 
+		InitStaticText("fr");
+	});
+	$("#enButton").click(function(){ 
+		InitStaticText("en");
+	});
+	
+})();
 
 
 

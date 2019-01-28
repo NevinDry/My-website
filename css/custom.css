@@ -11,3 +11,14 @@
 .titleSkills{
 	font-size: 10px;
 }
+
+
+.li-flag{
+    float: right;
+    height: 48px;
+    cursor:pointer;
+}
+
+.li-flag img{
+        height: 48px;
+}
