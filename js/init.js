@@ -200,8 +200,8 @@ function TransMod(){
 	library["en"]["translatable.menuAbout"] = "About";
 	library["en"]["translatable.objectif"] = "I am looking to be part of development team to share my experience, bring my skills, improve them and enrich my knowledge.";
 	library["en"]["translatable.aboutTtitle"] = "About";
-
-
+	library["en"]["translatable.aboutText"] = "After 3 years of part-time training in software development, I obtained my Master degree in computer science in France at the engineering school EPSI Bordeaux. After that I decided to go working in a foreign country where I could discover new technologies and new ways of work. I decided to go to Australia where I have been part of many projects at 1ICT, a cutting edge IT company based in Brisbane where I enriched my technical skills and my communication abilities. During my 6 years work experiences I have been able to bring my skills and enrich my knowledge on different companies and projects, from the multinationnal like Pernod-Ricard or Dominos Pizza where I worked on many scaling softwares, to some smaller dynamic companies like Solicis or 1ICT where I join full-stack development teams. I learned and worked on many tecnhologies like native mobile, frontend and backend framework using many langages or even unusual and challenging technologies like Google Glass and Beacons. <br> Coming back to Europe after this amazing experience, I am looking for a dynamic development team where I can bring my skills and enrich my knowledge.";
+	
     // FR
 	library["fr"] = new Array();
 	library["fr"]["translatable.menuHome"] = "Acceuil";
@@ -211,6 +211,7 @@ function TransMod(){
 	library["fr"]["translatable.menuAbout"] = "A propos";
 	library["fr"]["translatable.objectif"] = "Je recherche une équipe de dévelopement pour partager mon expérience, apporter mes compétences, les améliorer et enrichir mes conaissances";
 	library["fr"]["translatable.aboutTtitle"] = "Mon histoire";
+	library["fr"]["translatable.aboutText"] = "";
 
 	
 }
@@ -220,12 +221,13 @@ function TransMod(){
 	function InitStaticText(lang){
 		var langModule = new TransMod();
 		$("#menuHome").html(langModule.translate(lang, $("#menuHome").attr("data-token")));
-        $("#menuResume").html(langModule.translate(lang, $("#menuResume").attr("data-token")));
+      $("#menuResume").html(langModule.translate(lang, $("#menuResume").attr("data-token")));
 		$("#menuContact").html(langModule.translate(lang, $("#menuContact").attr("data-token")));
 		$("#menuWorks").html(langModule.translate(lang, $("#menuWorks").attr("data-token")));
 		$("#menuAbout").html(langModule.translate(lang, $("#menuAbout").attr("data-token")));
 		$("#objectif").html(langModule.translate(lang, $("#objectif").attr("data-token")));
 		$("#aboutTtitle").html(langModule.translate(lang, $("#aboutTtitle").attr("data-token")));
+		$("#aboutText").html(langModule.translate(lang, $("#aboutText").attr("data-token")));
 
 	}	
 	
